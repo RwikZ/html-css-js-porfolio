@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="dekstop-nav">
+          <div class="logo">Rwik Kar</div>
+          <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>    
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rwik Kar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>  
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.png" alt="Rwik Kar profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello Im</p>
+            <h1 class="title">Rwik Kar</h1>
+            <p class="section__text__p2">Developer</p>
+            <div class="btn-container">
+                <button
+                 class="btn btn-color-2"
+                  onclick="window.open('./assests/resume-example.pdf')">
+                Download CV
+            </button>
+            <button
+                 class="btn btn-color-1"
+                  onclick="location.href='./#contact' ">
+                Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href=' https://www.linkedin.com/in/rwik-kar-4aa2502ab/'">
+                <img src="./assests/github.png" alt="My GitHub Profile"
+                class="icon" onclick="location.href=' https://github.com/RwikZ'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more </p>
+        <h1 class="title">About me </h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assests/about-pic.png" 
+                alt="profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" 
+                         alt="experience icon"
+                         class="icon">
+                         <h3>Experience</h3>
+                         <p>2+ years  <br> Developnment</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" 
+                         alt="education icon"
+                         class="icon">
+                         <h3>Education</h3>
+                         <p>B.tech <br> BS in Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptatem velit quo quidem ad, porro, sunt laborum ab quibusdam cumque vitae. Adipisci repellat nisi in. Velit, quam neque itaque nulla consequuntur alias autem excepturi omnis? Officiis aliquam minus, corrupti repudiandae reprehenderit totam odio vero amet! In corporis maxime ducimus vero?
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
